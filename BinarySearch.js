@@ -4,8 +4,8 @@ function BinarySearch(arr, target) {
   let min = 0;
   let max = arr.length - 1;
   while (max >= min) {
-    mid = Math.floor((min + max) / 2);
-    midVal = arr[mid];
+    let mid = Math.floor((min + max) / 2);
+    let midVal = arr[mid];
     console.log(mid, midVal);
     if (midVal < target) min = mid + 1;
     else if (midVal > target) max = mid - 1;
